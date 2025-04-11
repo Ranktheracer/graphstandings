@@ -21,6 +21,7 @@ df = df.melt(id_vars=["Race"], var_name="Naam", value_name="Score")
 # Create Dash app
 app = dash.Dash(__name__)
 app.title = "F1 Voorspellingen 2024"
+server = app.server
 
 # Layout of the app
 app.layout = html.Div([
